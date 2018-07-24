@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
-import { PhotoModule } from './photos/photo.modulo';
+import { PhotoModule } from './photo/photo.module';
+import { AppRoutingModule } from './app.routing.module';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { PhotoModule } from './photos/photo.modulo';
   imports: [
     BrowserModule,
     PhotoModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
